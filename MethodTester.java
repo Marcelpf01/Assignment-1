@@ -3,7 +3,7 @@ public class MethodTester {
     // Algorithm 1: Calculate the maximum sum of subarrays with a length up to 3
     public static int algorithm1(int[] A) {
         int n = A.length;
-        int maxSum = 0; // Default max sum is 0 (for the case where all elements are negative)
+        int maxSum = 0; // Default max sum is 0 
         
         for (int i = 0; i < n; i++) {
             for (int j = i; j < Math.min(i + 3, n); j++) {
@@ -19,7 +19,7 @@ public class MethodTester {
         return maxSum;
     }
 
-    // Algorithm 2: Same as Algorithm 1, but reuse the sum for efficiency
+    // Algorithm 2: 
     public static int algorithm2(int[] A) {
         int n = A.length;
         int maxSum = 0;
@@ -36,7 +36,7 @@ public class MethodTester {
         return maxSum;
     }
 
-    // Algorithm 3 (Optional): Optimize with intermediate storage
+    // Algorithm 3:
     public static int algorithm3(int[] A) {
         int n = A.length;
         int maxSum = 0;
